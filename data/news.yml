@@ -1,0 +1,46 @@
+title: "News"
+
+service:
+  heading: "Service"
+  firstrole_url: "https://www.mdpi.com/journal/mathematics/special_issues/KK83053602"
+  firstrole_note: "(Please consider submitting your work)"
+
+  roles:
+    - "Special issue editor: Emerging networks and blockchain technology"
+    - "TPC member Sigmetrics '23"
+    - "Organized Workshop on Blockchains and Networking, Sigmetrics '22"
+    - "TPC member Sigmetrics '22"
+    - "TPC member ICBC '22"
+    - "TPC member ITC '24"
+    - "TPC member Mobihoc '22"
+    - "TPC member Sigmetrics '21"
+    - "TPC member Workshop on Decentralising the Internet with IPFS and Filecoin (DI2F) (part of IFIP Networking '21)"
+
+articles:
+  heading: "Articles on Dandelion"
+  links:
+    - name: "Redesigning the Bitcoin Network for Anonymity"
+      url: "https://dl.acm.org/doi/10.1145/3084459"
+    - name: "Lightweight Cryptocurrency Networking with Formal Anonymity Guarantees"
+      url: "https://arxiv.org/pdf/1805.11060.pdf"
+
+websites:
+  heading: "Relevant websites"
+  links:
+    - name: "BTCManager"
+      url: "https://crypto.news"
+    - name: "CyberScoop"
+      url: "https://cyberscoop.com/researchers-redesign-bitcoin-anonymity-u-s-law-enforcement-hires-specialists/"
+    - name: "Bitcoin"
+      url: "https://news.bitcoin.com/dandelion-bitcoin-anonymize-transaction-broadcasts/"
+    - name: "Oodlestechnologies"
+      url: "https://www.oodlestechnologies.com/blogs/Bitcoin-To-Get-More-Anonymous-With-The-New-BIP-Called-Dandelion/"
+    - name: "InfoCoin"
+      url: "https://infocoin.net/en/2018/05/15/bitcoin-privacy-proposal/"
+    - name: "Wired"
+      url: "https://www.wired.com/story/harry-pottery-cryptocurrency-privacy-zcash-monero/"
+
+
+image:
+  src: "image.png"
+  alt: "crypto.news"

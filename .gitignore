@@ -1,0 +1,4 @@
+.bundle/
+build/
+.DS_Store
+.env

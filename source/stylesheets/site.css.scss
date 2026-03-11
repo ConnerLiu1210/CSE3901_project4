@@ -1,0 +1,113 @@
+body {
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #222;
+    background-color: #f8f9fb;
+}
+
+h1, h2 {
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.news-page {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "news-title"
+    "news-articles"
+    "news-services"
+    "news-websites"
+    "news-image";
+    gap: 20px;
+    padding: 10px;
+}
+
+.news-page a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.news-service {
+    grid-area: news-services;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news-articles {
+    grid-area: news-articles;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news-websites {
+    grid-area: news-websites;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.news-image {
+    grid-area: news-image;
+}
+
+.news-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 599px) {
+    .news-page {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "news-title"
+        "news-services"
+        "news-articles"
+        "news-websites"
+        "news-image";
+    }
+}
+
+
+
+@media (min-width: 600px) and (max-width: 899px) {
+    .news-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "news-title news-title"
+        "news-services news-websites"
+        "news-articles news-websites"
+        "news-image news-image"
+        ;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .news-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "news-title news-title"
+        "news-services news-articles"
+        "news-websites news-image";
+    }
+}

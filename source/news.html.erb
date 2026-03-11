@@ -1,0 +1,52 @@
+---
+title: News
+---
+<section class="news-page">
+    <h1 class="news-title"><%= data.news.title %></h1>
+
+    <section class="news-service">
+        <h2><%= data.news.service.heading %></h2>
+        <ul>
+            <% data.news.service.roles.each_with_index do |role, index| %>
+                <% if index == 0 %>
+                    <li>
+                    <%= role %>
+                    <a href="<%= data.news.service.firstrole_url %>"><br><%= data.news.service.firstrole_url %></a>
+                    <%= data.news.service.firstrole_note %>
+                    </li>
+                <% else %>
+                    <li><%= role %></li>
+                <% end %>
+            <% end %>
+        </ul>
+    </section>
+
+
+    <section class="news-articles">
+        <h2><%= data.news.articles.heading %></h2>
+        <ul>
+            <% data.news.articles.links.each do |article| %>
+                <li>
+                    <a href="<%= article.url %>"><%= article.name %></a>
+                </li>
+            <% end %>
+        </ul>
+    </section>
+
+    <section class="news-websites">
+        <h2><%= data.news.websites.heading %></h2>
+        <ul>
+            <% data.news.websites.links.each do |website| %>
+                <li>
+                    <a href="<%= website.url %>"><%= website.name %></a>
+                </li>
+            <% end %>
+        </ul>
+    </section>
+
+    <section class="news-image">
+        <a href="<%= data.news.websites.links.first.url %>" target="_blank" rel="noopener">
+            <img src="/images/<%= data.news.image.src %>" alt="<%= data.news.image.alt %>">
+        </a>
+    </section>
+</section>
