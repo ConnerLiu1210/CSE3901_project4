@@ -1,1 +1,1 @@
-#This is the news page for the redesigned professor’s personal website.
+This is the news page for the redesigned professor’s personal website.
